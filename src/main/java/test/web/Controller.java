@@ -48,6 +48,12 @@ public class Controller {
 
     @RequestMapping(method = RequestMethod.GET, path = "/ping")
     public ResponseEntity<String> ping() {
+        try {
+            // Emulate latency, 3000 ms max
+            Thread.sleep(new Random().nextInt(3000));
+        } catch (InterruptedException ie) { }
+
+        // Pick response
         return responseEntityProviders.get(new Random().nextInt(responseEntityProviders.size())).provide();
     }
 }
