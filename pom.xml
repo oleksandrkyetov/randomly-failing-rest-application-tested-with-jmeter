@@ -24,6 +24,7 @@
       <spring-boot.version>2.0.5.RELEASE</spring-boot.version>
       <guava.version>26.0-jre</guava.version>
       <assertj-core.version>3.11.1</assertj-core.version>
+      <org.apache.jmeter.version>5.0</org.apache.jmeter.version>
    </properties>
 
    <dependencyManagement>
@@ -48,10 +49,6 @@
          <artifactId>spring-boot-starter-web</artifactId>
       </dependency>
       <dependency>
-         <groupId>org.springframework.boot</groupId>
-         <artifactId>spring-boot-starter-actuator</artifactId>
-      </dependency>
-      <dependency>
          <groupId>com.google.guava</groupId>
          <artifactId>guava</artifactId>
          <version>${guava.version}</version>
@@ -61,6 +58,26 @@
          <groupId>org.springframework.boot</groupId>
          <artifactId>spring-boot-starter-test</artifactId>
          <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.jmeter</groupId>
+         <artifactId>ApacheJMeter_core</artifactId>
+         <version>${org.apache.jmeter.version}</version>
+      </dependency>
+      <!--<dependency>-->
+         <!--<groupId>org.apache.jmeter</groupId>-->
+         <!--<artifactId>ApacheJMeter_java</artifactId>-->
+         <!--<version>${org.apache.jmeter.version}</version>-->
+      <!--</dependency>-->
+      <!--<dependency>-->
+         <!--<groupId>org.apache.jmeter</groupId>-->
+         <!--<artifactId>ApacheJMeter_components</artifactId>-->
+         <!--<version>${org.apache.jmeter.version}</version>-->
+      <!--</dependency>-->
+      <dependency>
+         <groupId>org.apache.jmeter</groupId>
+         <artifactId>ApacheJMeter_http</artifactId>
+         <version>${org.apache.jmeter.version}</version>
       </dependency>
       <dependency>
          <groupId>org.assertj</groupId>
