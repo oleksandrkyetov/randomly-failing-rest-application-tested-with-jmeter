@@ -7,6 +7,7 @@ import org.apache.jorphan.collections.HashTree;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
@@ -17,8 +18,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.io.File;
 import java.net.URL;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+@RunWith(JUnit4.class)
+//@RunWith(SpringRunner.class)
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class ApplicationTest {
 
     private static final String JMETER_HOME = "/home/olkyupwork/Softwares/ApacheJMeter";
