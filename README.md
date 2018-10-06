@@ -1,2 +1,2 @@
-# test-rest-application
-Test REST application which respond with random response code and random latency
+# randomly-failing-rest-application-tested-with-jmeter
+Randomly failing REST application tested with Apache JMeter
